@@ -1,0 +1,19 @@
+[theme]
+# The primary color is a dark green, which is a good primary color for an agriculture theme
+primaryColor = "#2E8B57" 
+backgroundColor = "#F0FFF0"  # A light, airy green for the background
+secondaryBackgroundColor = "#E0FFE0" # A slightly darker green for contrast
+textColor = "#333333"       # A dark gray for text, which is easier to read than pure black
+font = "sans serif"
+
+[server]
+# Use Python 3.12 for compatibility
+# with the 'imghdr' module, which was removed in Python 3.13.
+# The `server.headless = true` line is also a good practice
+# for cloud deployments.
+headless = true
+
+[global]
+# This explicitly sets the Python version for the Streamlit Cloud server.
+# Python 3.12 is required for older Streamlit versions to function correctly.
+python = "3.12"
